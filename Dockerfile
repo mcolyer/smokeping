@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM resin/rpi-raspbian:jessie
 MAINTAINER David Personette <dperson@dperson.com>
 
 # Install lighttpd and smokeping
@@ -62,6 +62,9 @@ RUN export DEBIAN_FRONTEND='noninteractive' && \
 COPY smokeping.sh /usr/bin/
 
 VOLUME ["/etc/smokeping", "/etc/ssmtp"]
+
+# Setting LC_ALL is incompatible with smokeping
+ENV LC_ALL=""
 
 EXPOSE 80
 
