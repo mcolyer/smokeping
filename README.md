@@ -2,7 +2,7 @@
 
 # Smokeping
 
-Smokeping docker container
+Smokeping docker container for RaspberryPi
 
 # What is Smokeping?
 
