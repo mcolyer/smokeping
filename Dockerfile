@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:jessie
+FROM resin/rpi-raspbian:jessie-20160401
 MAINTAINER David Personette <dperson@dperson.com>
 
 # Install lighttpd and smokeping
